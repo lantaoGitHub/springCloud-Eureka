@@ -1,0 +1,8 @@
+rootProject.name = 'springCloud-eureka'
+include 'eureka-server'
+include 'eureka-client'
+include 'eureka-server-2'
+include 'ribbon'
+include 'feign'
+include 'feign'
+

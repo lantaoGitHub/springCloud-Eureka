@@ -1,0 +1,49 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: client
+  profiles: client-proFiles-1
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://erueka-server-1:8081/eureka/
+
+
+---
+
+server:
+  port: 8002
+
+spring:
+  application:
+    name: client
+  profiles: client-proFiles-2
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://erueka-server-1:8081/eureka/
+
+---
+
+server:
+  port: 8003
+
+spring:
+  application:
+    name: client
+  profiles: client-proFiles-3
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://erueka-server-1:8081/eureka/
